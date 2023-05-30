@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
 ul {
 	list-style-type: none;
 	list-style-type: none;
