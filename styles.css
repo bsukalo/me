@@ -15,6 +15,7 @@ ul {
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #d6d4c5;
 }
 
 .main {
@@ -34,6 +35,7 @@ body {
 	align-items: center;
 	text-align: center;
 	justify-content: center;
+	margin-left: 0px;
 }
 
 .nav ul {
@@ -51,4 +53,17 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: #d6d4c5;
+}
+
+.slide-in {
+	animation: slide-in 1.5s ease;
+}
+
+@keyframes slide-in {
+	from {
+		margin-left: -300px;
+	}
+	to {
+		margin-left: 0px;
+	}
 }
