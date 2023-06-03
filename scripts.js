@@ -5,3 +5,7 @@ setInterval(function () {
 	onStart();
 }),
 	250;
+setInterval(function () {
+	document.getElementById("sidebar").style.left = "0px";
+}),
+	1750;

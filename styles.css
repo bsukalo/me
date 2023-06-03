@@ -27,6 +27,7 @@ body {
 
 .sidebar {
 	display: flex;
+	position: relative;
 	flex-wrap: nowrap;
 	width: 35%;
 	height: 100vh;
@@ -35,7 +36,7 @@ body {
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	margin-left: 0px;
+	left: -300px;
 }
 
 .nav ul {
@@ -61,9 +62,9 @@ body {
 
 @keyframes slide-in {
 	from {
-		margin-left: -300px;
+		left: -600px;
 	}
 	to {
-		margin-left: 0px;
+		left: 0px;
 	}
 }
