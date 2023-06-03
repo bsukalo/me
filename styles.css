@@ -28,15 +28,17 @@ body {
 .sidebar {
 	display: flex;
 	position: relative;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	width: 35%;
 	height: 100vh;
+	min-width: 120px;
 	max-width: 250px;
 	background-color: #f7f6f2;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
 	left: -300px;
+	padding: 0px 10px;
 }
 
 .nav ul {
@@ -45,9 +47,26 @@ body {
 }
 
 .nav ul li {
-	margin-bottom: 5vh;
+	margin-bottom: 4vh;
 	font-family: "Secular One", sans-serif;
 	font-size: 18px;
+}
+
+.socials-container {
+	width: 120px;
+	height: 30px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.socials {
+	height: 30px;
+	width: 30px;
+	opacity: 40%;
+	transition: opacity 0.5s;
+	margin-top: 3vh;
 }
 
 .content {

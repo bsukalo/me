@@ -1,11 +1,28 @@
+let icons = document.getElementsByClassName("socials");
+let sidebar = document.querySelector(".sidebar");
+
 function onStart() {
-	document.getElementById("sidebar").classList.add("slide-in");
+	sidebar.classList.add("slide-in");
 }
-setInterval(function () {
-	onStart();
+
+for (let i = 0; i < icons.length; i++) {
+	icons[i].addEventListener("mouseover", function () {
+		icons[i].style.opacity = "80%";
+	});
+	icons[i].addEventListener("mouseout", function () {
+		icons[i].style.opacity = "40%";
+	});
+}
+
+if (!sessionStorage.getItem("hasVisited")) {
+	setTimeout(function () {
+		onStart();
+	}),
+		100;
+	sessionStorage.setItem("hasVisited", true);
+}
+
+setTimeout(function () {
+	sidebar.style.left = "0px";
 }),
-	250;
-setInterval(function () {
-	document.getElementById("sidebar").style.left = "0px";
-}),
-	1750;
+	1600;
