@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 
+@media all and (max-height: 360px) {
+	.socials,
+	#profile-image {
+		display: none;
+	}
+	.nav ul {
+		margin-top: 25vh;
+	}
+}
+
 * {
 	font-display: optional;
 }
@@ -33,16 +43,20 @@ body {
 	display: flex;
 	position: relative;
 	flex-wrap: wrap;
-	width: 35%;
+	width: 25%;
 	height: 100vh;
-	min-width: 120px;
-	max-width: 250px;
+	min-width: 130px;
+	max-width: 420px;
 	background-color: #f7f6f2;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
 	left: -300px;
 	padding: 0px 10px;
+}
+
+.nav {
+	margin-bottom: 50%;
 }
 
 .nav ul {
@@ -54,10 +68,19 @@ body {
 	margin-bottom: 4vh;
 	font-family: "Secular One", sans-serif;
 	font-size: 18px;
+	transition: all 0.2s;
+}
+
+#profile-image {
+	width: 75%;
+	height: auto;
+	max-width: 195px;
+	position: relative;
+	padding-bottom: 5vh;
 }
 
 .socials-container {
-	width: 120px;
+	width: 100%;
 	height: 30px;
 	display: flex;
 	flex-wrap: nowrap;
@@ -70,7 +93,7 @@ body {
 	width: 30px;
 	opacity: 40%;
 	transition: opacity 0.5s;
-	margin-top: 3vh;
+	margin-top: 15vh;
 }
 
 .content {
