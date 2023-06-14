@@ -26,3 +26,11 @@ setTimeout(function () {
 	sidebar.style.left = "0px";
 }),
 	1600;
+
+function openSidebar() {
+	sidebar.style.left = "0px";
+}
+
+function closeSidebar() {
+	sidebar.style.left = "-600px";
+}

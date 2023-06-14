@@ -22,6 +22,18 @@ body {
 	background-color: #d6d4c5;
 }
 
+button {
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	background: none;
+	opacity: 60%;
+}
+
+button:hover {
+	opacity: 100%;
+}
+
 .main {
 	display: flex;
 	flex-direction: row;
@@ -39,12 +51,21 @@ body {
 	background-color: #f7f6f2;
 	text-align: center;
 	justify-content: center;
+	z-index: 2;
+	transition: ease 1s;
 }
 
 .nav {
 	width: 100%;
 	margin-top: 50px;
 	margin-bottom: 500px;
+}
+
+.nav .closeSidebar {
+	font-size: 48px;
+	position: absolute;
+	top: 0px;
+	right: 10px;
 }
 
 .nav ul li {
@@ -129,4 +150,11 @@ body {
 	to {
 		left: 0px;
 	}
+}
+
+.main .openSidebar {
+	font-size: 32px;
+	position: absolute;
+	top: 5px;
+	left: 10px;
 }
