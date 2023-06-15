@@ -52,7 +52,8 @@ button:hover {
 	text-align: center;
 	justify-content: center;
 	z-index: 2;
-	transition: ease 1s;
+	transition: left ease 1s;
+	left: -300px;
 }
 
 .nav {
@@ -117,6 +118,7 @@ button:hover {
 
 .slide-in {
 	animation: slide-in 1.5s ease;
+	animation-delay: 100ms;
 }
 
 .hover-underline {
