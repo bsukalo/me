@@ -53,8 +53,8 @@ button:hover {
 	text-align: center;
 	justify-content: center;
 	z-index: 2;
-	transition: left ease 1s;
-	left: -300px;
+	transition: left ease 0.5s;
+	left: 0px;
 }
 
 .nav {
@@ -145,8 +145,8 @@ button:hover {
 	transform: scaleX(1);
 	transform-origin: bottom left;
 }
-
-@keyframes slide-in {
+/*
+@keyframes sidebar-on-launch {
 	from {
 		left: -600px;
 	}
@@ -155,6 +155,15 @@ button:hover {
 	}
 }
 
+@keyframes main-on-launch {
+	from {
+		left: 0;
+	}
+	to {
+		left: 300px;
+	}
+}
+*/
 .main {
 	width: 100%;
 }
@@ -168,10 +177,10 @@ button:hover {
 
 #text {
 	position: absolute;
-	left: 0;
+	left: 300px;
 	max-width: 100%;
-	margin-left: 4%;
+	margin-left: 5%;
 	margin-right: 4%;
 	padding-top: 40px;
-	transition: left 1s;
+	transition: left 0.5s;
 }

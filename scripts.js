@@ -2,8 +2,10 @@ let icons = document.getElementsByClassName("socials");
 let sidebar = document.querySelector(".sidebar");
 let text = document.getElementById("text");
 
+/*
 function onStart() {
-	sidebar.classList.add("slide-in");
+	sidebar.classList.add("sidebar-on-launch");
+	text.classList.add("main-on-launch");
 }
 
 for (let i = 0; i < icons.length; i++) {
@@ -14,6 +16,12 @@ for (let i = 0; i < icons.length; i++) {
 		icons[i].style.opacity = "40%";
 	});
 }
+
+setTimeout(function () {
+	sidebar.style.left = "0px";
+}),
+	1500;
+*/
 
 if (!sessionStorage.getItem("hasVisited")) {
 	setTimeout(function () {
@@ -32,8 +40,3 @@ function closeSidebar() {
 	sidebar.style.left = "-300px";
 	text.style.left = "0px";
 }
-
-setTimeout(function () {
-	sidebar.style.marginLeft = "0px";
-}),
-	1500;
