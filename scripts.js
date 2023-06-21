@@ -1,5 +1,6 @@
 let icons = document.getElementsByClassName("socials");
 let sidebar = document.querySelector(".sidebar");
+let text = document.getElementById("text");
 
 function onStart() {
 	sidebar.classList.add("slide-in");
@@ -24,13 +25,15 @@ if (!sessionStorage.getItem("hasVisited")) {
 
 function openSidebar() {
 	sidebar.style.left = "0px";
+	text.style.left = "300px";
 }
 
 function closeSidebar() {
 	sidebar.style.left = "-300px";
+	text.style.left = "0px";
 }
 
 setTimeout(function () {
-	sidebar.style.left = "0px";
+	sidebar.style.marginLeft = "0px";
 }),
 	1500;

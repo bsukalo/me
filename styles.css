@@ -7,6 +7,7 @@
 a {
 	text-decoration: none;
 	color: black;
+	cursor: pointer;
 }
 
 ul {
@@ -43,11 +44,11 @@ button:hover {
 
 .sidebar {
 	display: flex;
-	position: absolute;
+	position: fixed;
 	flex-wrap: wrap;
 	min-width: 300px;
 	max-width: 300px;
-	height: 100vh;
+	height: 100%;
 	background-color: #f7f6f2;
 	text-align: center;
 	justify-content: center;
@@ -72,7 +73,7 @@ button:hover {
 .nav ul li {
 	margin-right: 25px;
 	margin-left: 25px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	padding-bottom: 12px;
 	font-family: "Secular One", sans-serif;
 	font-size: 16px;
@@ -154,9 +155,23 @@ button:hover {
 	}
 }
 
+.main {
+	width: 100%;
+}
+
 .main .openSidebar {
 	font-size: 32px;
+	position: relative;
+	top: 30px;
+	left: 40px;
+}
+
+#text {
 	position: absolute;
-	top: 5px;
-	left: 10px;
+	left: 0;
+	max-width: 100%;
+	margin-left: 4%;
+	margin-right: 4%;
+	padding-top: 40px;
+	transition: left 1s;
 }
