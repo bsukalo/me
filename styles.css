@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Secular+One&display=swap");
 
 * {
 	font-display: optional;
@@ -15,6 +15,11 @@ ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+
+h2 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
 }
 
 body {
@@ -63,6 +68,11 @@ button:hover {
 	margin-bottom: 500px;
 }
 
+.nav ul h2 {
+	position: relative;
+	bottom: 6px;
+}
+
 .nav .closeSidebar {
 	font-size: 48px;
 	position: absolute;
@@ -84,7 +94,7 @@ button:hover {
 	width: 120px;
 	height: auto;
 	max-width: 195px;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 	clip-path: circle();
 }
 
@@ -117,11 +127,6 @@ button:hover {
 	background-color: #d6d4c5;
 }
 
-.slide-in {
-	animation: slide-in 1.5s ease;
-	animation-delay: 100ms;
-}
-
 .hover-underline {
 	display: inline-block;
 	position: relative;
@@ -146,6 +151,12 @@ button:hover {
 	transform-origin: bottom left;
 }
 /*
+
+.slide-in {
+	animation: slide-in 1.5s ease;
+	animation-delay: 100ms;
+}
+
 @keyframes sidebar-on-launch {
 	from {
 		left: -600px;
@@ -183,6 +194,12 @@ button:hover {
 	margin-right: 4%;
 	padding-top: 40px;
 	transition: left 0.5s;
+}
+
+.text h1 {
+	position: relative;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
 }
 
 @media only screen and (max-width: 800px) {
