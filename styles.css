@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Secular+One&display=swap");
 
 * {
 	font-display: optional;
@@ -19,7 +19,7 @@ ul {
 
 h2 {
 	font-family: "Montserrat", sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 16pt;
 }
 
@@ -78,10 +78,13 @@ button:hover {
 }
 
 .nav .closeSidebar {
-	font-size: 48px;
 	position: absolute;
-	top: 0px;
-	right: 10px;
+	top: 20px;
+	right: 15px;
+}
+
+.closeSidebar img {
+	max-width: 25px;
 }
 
 .nav ul li {
