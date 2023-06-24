@@ -20,6 +20,7 @@ ul {
 h2 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
+	font-size: 16pt;
 }
 
 body {
@@ -29,11 +30,19 @@ body {
 }
 
 button {
+	position: static;
+	display: inline;
 	cursor: pointer;
 	padding: 0;
 	border: none;
 	background: none;
 	opacity: 60%;
+	transition: opacity 0.5s;
+}
+
+.content button {
+	text-align: center;
+	padding: 2px;
 }
 
 button:hover {
@@ -68,11 +77,6 @@ button:hover {
 	margin-bottom: 500px;
 }
 
-.nav ul h2 {
-	position: relative;
-	bottom: 6px;
-}
-
 .nav .closeSidebar {
 	font-size: 48px;
 	position: absolute;
@@ -96,6 +100,12 @@ button:hover {
 	max-width: 195px;
 	margin-bottom: 0px;
 	clip-path: circle();
+}
+
+.nav ul h2 {
+	position: relative;
+	bottom: 5px;
+	font-size: 18px;
 }
 
 .socials-container {
@@ -179,11 +189,15 @@ button:hover {
 	width: 100%;
 }
 
-.main .openSidebar {
+.openSidebar {
 	font-size: 32px;
 	position: relative;
 	top: 30px;
 	left: 40px;
+}
+
+.openSidebar img {
+	max-width: 26px;
 }
 
 #text {
@@ -199,7 +213,7 @@ button:hover {
 .text h1 {
 	position: relative;
 	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 @media only screen and (max-width: 800px) {
@@ -208,5 +222,9 @@ button:hover {
 	}
 	#text {
 		left: 0px !important;
+	}
+	button {
+		opacity: 0;
+		z-index: -1;
 	}
 }

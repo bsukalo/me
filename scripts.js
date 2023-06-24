@@ -8,6 +8,12 @@ function onStart() {
 	text.classList.add("main-on-launch");
 }
 
+setTimeout(function () {
+	sidebar.style.left = "0px";
+}),
+	1500;
+*/
+
 for (let i = 0; i < icons.length; i++) {
 	icons[i].addEventListener("mouseover", function () {
 		icons[i].style.opacity = "80%";
@@ -16,12 +22,6 @@ for (let i = 0; i < icons.length; i++) {
 		icons[i].style.opacity = "40%";
 	});
 }
-
-setTimeout(function () {
-	sidebar.style.left = "0px";
-}),
-	1500;
-*/
 
 if (!sessionStorage.getItem("hasVisited")) {
 	setTimeout(function () {
