@@ -73,26 +73,22 @@ button:hover {
 .nav {
 	width: 100%;
 	margin-top: 50px;
+	margin-right: 10px;
 }
 
 .nav .closeSidebar {
 	position: absolute;
 	top: 20px;
-	right: 15px;
+	right: 18px;
 	filter: invert(100);
 }
 
 .closeSidebar img {
-	max-width: 25px;
+	max-width: 23px;
 }
 
-.nav ul,
-.nav a {
-	color: #d2d1d1;
-}
-
-.hover-underline.selected-item {
-	color: #f8b739;
+.menu-item.selected-item {
+	color: #ffffff;
 }
 
 .nav li {
@@ -122,6 +118,7 @@ button:hover {
 .profile-area h2 {
 	font-size: 18px;
 	font-weight: 300;
+	color: #d2d1d1;
 }
 
 .menu-items {
@@ -159,13 +156,13 @@ button:hover {
 	background-color: #fafafa;
 }
 
-.hover-underline {
+.menu-item {
 	display: inline-block;
 	position: relative;
-	color: #f8b739;
+	color: #9d9d9d;
 }
 
-.hover-underline::after {
+.menu-item::after {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -178,7 +175,7 @@ button:hover {
 	transition: transform 0.2s ease-out;
 }
 
-.hover-underline:hover::after {
+.menu-item:hover::after {
 	transform: scaleX(1);
 	transform-origin: bottom left;
 }

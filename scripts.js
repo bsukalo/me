@@ -1,6 +1,7 @@
 let icons = document.getElementsByClassName("socials");
 let sidebar = document.querySelector(".sidebar");
 let stretchables = document.querySelectorAll(".stretchable");
+let items = document.querySelectorAll(".menu-item");
 
 /*
 function onStart() {
@@ -44,3 +45,22 @@ function closeSidebar() {
 		element.style.setProperty("left", "0px");
 	});
 }
+
+$(function selectItem() {
+	items.forEach((item) => {
+		$(item).on("click", function () {
+			for (let i = 0; i < items.length; i++) {
+				items[i].classList.remove("selected-item");
+			}
+			$(this).addClass("selected-item");
+		});
+	});
+});
+
+/*items.forEach((item) => {
+		item.addEventListener("mousedown", function () {
+			console.log("click");
+			items[i].classList.add(".selected-item");
+		});
+	});
+*/
