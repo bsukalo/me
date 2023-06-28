@@ -2,7 +2,8 @@ let icons = document.getElementsByClassName("socials");
 let sidebar = document.querySelector(".sidebar");
 let stretchables = document.querySelectorAll(".stretchable");
 let items = document.querySelectorAll(".menu-item");
-let io = (this.io ^= 1);
+let pages = document.querySelectorAll(".page");
+let io = 0;
 
 for (let i = 0; i < icons.length; i++) {
 	icons[i].addEventListener("mouseover", function () {
@@ -40,9 +41,17 @@ $(".close-sidebar").click(function () {
 	io = 0;
 });
 
-$(function selectItem() {
+$(function selectPage() {
 	items.forEach((item) => {
 		$(item).on("click", function () {
+			pages.forEach((page) => {
+				for (let i = 0; i < pages.length; i++) {
+					console.log(pages[i].classList);
+					pages[i].classList.remove("active");
+				}
+				console.log("." + item.getAttribute("name") + ".page");
+				$("." + item.getAttribute("name") + ".page").addClass("active");
+			});
 			for (let i = 0; i < items.length; i++) {
 				items[i].classList.remove("selected-item");
 			}
