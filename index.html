@@ -15,21 +15,29 @@
 						<img src="images/sidebarclose.png" />
 					</button>
 					<ul>
-						<img
-							src="images/pfp.png"
-							alt="profile_image"
-							id="profile-image"
-						/>
-						<li>
-							<h2>@bsukalo</h2>
-						</li>
-						<li><a class="hover-underline">Home</a></li>
-						<li>
-							<a class="hover-underline">Resume</a>
-						</li>
-						<li>
-							<a class="hover-underline">My Projects</a>
-						</li>
+						<div class="profile-area">
+							<img
+								src="images/pfp.png"
+								alt="profile_image"
+								id="profile-image"
+							/>
+							<li>
+								<h2>@bsukalo</h2>
+							</li>
+						</div>
+						<div class="menu-items">
+							<li>
+								<a class="hover-underline selected-item"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a class="hover-underline">Resume</a>
+							</li>
+							<li>
+								<a class="hover-underline">My Projects</a>
+							</li>
+						</div>
 
 						<div class="socials-container">
 							<a href="https://www.linkedin.com/in/bsukalo/"
@@ -51,12 +59,12 @@
 
 			<div class="content">
 				<div class="text">
-					<nav class="navbar shrinkable">
+					<nav class="navbar stretchable">
 						<button class="openSidebar" onclick="openSidebar()">
 							<img src="images/sidebaropen.png" alt="" />
 						</button>
 					</nav>
-					<div class="text-container shrinkable">
+					<div class="text-container stretchable">
 						<h1>About me</h1>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing

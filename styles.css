@@ -58,22 +58,21 @@ button:hover {
 
 .sidebar {
 	display: flex;
+	flex-wrap: nowrap;
 	position: fixed;
-	flex-wrap: wrap;
 	min-width: 300px;
 	max-width: 300px;
 	height: 100%;
 	background-color: #1d1919;
 	text-align: center;
 	justify-content: center;
-	z-index: 2;
 	transition: left ease 0.3s;
 	left: 0px;
 }
 
 .nav {
+	width: 100%;
 	margin-top: 50px;
-	margin-bottom: 500px;
 }
 
 .nav .closeSidebar {
@@ -89,12 +88,14 @@ button:hover {
 
 .nav ul,
 .nav a {
-	color: #ffffff;
+	color: #d2d1d1;
 }
 
-.nav ul li {
-	margin-right: 25px;
-	margin-left: 25px;
+.hover-underline.selected-item {
+	color: #f8b739;
+}
+
+.nav li {
 	margin-bottom: 20px;
 	padding-bottom: 12px;
 	font-family: "Montserrat", sans-serif;
@@ -112,10 +113,20 @@ button:hover {
 	clip-path: circle();
 }
 
-.nav ul h2 {
+.profile-area {
 	position: relative;
 	bottom: 5px;
 	font-size: 18px;
+}
+
+.profile-area h2 {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.menu-items {
+	margin-left: 25px;
+	margin-right: 25px;
 }
 
 .socials-container {
@@ -206,11 +217,11 @@ button:hover {
 	border-radius: 5px;
 	height: 70px;
 	left: 300px;
-	right: 6%;
+	right: 5%;
 	justify-content: center;
 	vertical-align: middle;
 	margin: 50px 0px 50px 0px;
-	margin-left: 6%;
+	margin-left: 5%;
 }
 
 .openSidebar {
@@ -218,7 +229,7 @@ button:hover {
 	top: 15px;
 	left: 20px;
 	z-index: 1;
-	transition: left 0.5s ease;
+	transition: opacity 0.2s ease;
 }
 
 .openSidebar img {
@@ -237,7 +248,7 @@ button:hover {
 	margin-right: 4%;
 }
 
-.shrinkable {
+.stretchable {
 	left: 300px;
 	transition: left 0.3s;
 }
@@ -247,7 +258,7 @@ button:hover {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
 }
-
+/*
 @media only screen and (max-width: 800px) {
 	.sidebar {
 		left: -300px;
@@ -255,4 +266,8 @@ button:hover {
 	.navbar {
 		left: 0px;
 	}
+	.text-container {
+		left: 0px;
+	}
 }
+*/

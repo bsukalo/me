@@ -1,6 +1,6 @@
 let icons = document.getElementsByClassName("socials");
 let sidebar = document.querySelector(".sidebar");
-let shrinkables = document.querySelectorAll(".shrinkable");
+let stretchables = document.querySelectorAll(".stretchable");
 
 /*
 function onStart() {
@@ -33,14 +33,14 @@ if (!sessionStorage.getItem("hasVisited")) {
 
 function openSidebar() {
 	sidebar.style.left = "0px";
-	shrinkables.forEach((element) => {
+	stretchables.forEach((element) => {
 		element.style.setProperty("left", "300px");
 	});
 }
 
 function closeSidebar() {
 	sidebar.style.left = "-300px";
-	shrinkables.forEach((element) => {
+	stretchables.forEach((element) => {
 		element.style.setProperty("left", "0px");
 	});
 }
