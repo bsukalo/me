@@ -2,18 +2,7 @@ let icons = document.getElementsByClassName("socials");
 let sidebar = document.querySelector(".sidebar");
 let stretchables = document.querySelectorAll(".stretchable");
 let items = document.querySelectorAll(".menu-item");
-
-/*
-function onStart() {
-	sidebar.classList.add("sidebar-on-launch");
-	text.classList.add("main-on-launch");
-}
-
-setTimeout(function () {
-	sidebar.style.left = "0px";
-}),
-	1500;
-*/
+let io = (this.io ^= 1);
 
 for (let i = 0; i < icons.length; i++) {
 	icons[i].addEventListener("mouseover", function () {
@@ -22,14 +11,6 @@ for (let i = 0; i < icons.length; i++) {
 	icons[i].addEventListener("mouseout", function () {
 		icons[i].style.opacity = "60%";
 	});
-}
-
-if (!sessionStorage.getItem("hasVisited")) {
-	setTimeout(function () {
-		onStart();
-	}),
-		100;
-	sessionStorage.setItem("hasVisited", true);
 }
 
 function openSidebar() {
@@ -46,6 +27,19 @@ function closeSidebar() {
 	});
 }
 
+$(".open-sidebar").click(function () {
+	io ^= 1;
+	if (io) {
+		openSidebar();
+	} else {
+		closeSidebar();
+	}
+});
+
+$(".close-sidebar").click(function () {
+	io = 0;
+});
+
 $(function selectItem() {
 	items.forEach((item) => {
 		$(item).on("click", function () {
@@ -56,11 +50,3 @@ $(function selectItem() {
 		});
 	});
 });
-
-/*items.forEach((item) => {
-		item.addEventListener("mousedown", function () {
-			console.log("click");
-			items[i].classList.add(".selected-item");
-		});
-	});
-*/
