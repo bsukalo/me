@@ -43,21 +43,35 @@ $(".close-sidebar").click(function () {
 });
 
 $(function selectPage() {
+	let isAnimating = false; // Flag to track animation status
+	let activePage = null; // Variable to store the active page
+
 	items.forEach((item) => {
 		$(item).on("click", function () {
-			pages.forEach((page) => {
-				for (let i = 0; i < pages.length; i++) {
-					pages[i].classList.remove("active");
+			if (!isAnimating) {
+				isAnimating = true;
+				const targetPage = "." + item.getAttribute("name") + ".page";
+
+				if (activePage === targetPage) {
+					isAnimating = false;
+					return;
 				}
-				$("." + item.getAttribute("name") + ".page").fadeOut(50);
-				$("." + item.getAttribute("name") + ".page").addClass("active");
-				activePage = "." + item.getAttribute("name") + ".page";
-				$(activePage).fadeIn(50);
-			});
-			for (let i = 0; i < items.length; i++) {
-				items[i].classList.remove("selected-item");
+				pages.forEach((page) => {
+					page.classList.remove("active");
+				});
+
+				activePage = targetPage;
+				$(activePage).fadeOut(50, function () {
+					$(activePage).addClass("active");
+					$(activePage).fadeIn(50, function () {
+						isAnimating = false;
+					});
+				});
+				for (let i = 0; i < items.length; i++) {
+					items[i].classList.remove("selected-item");
+				}
+				$(this).addClass("selected-item");
 			}
-			$(this).addClass("selected-item");
 		});
 	});
 });
