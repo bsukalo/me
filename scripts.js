@@ -61,9 +61,9 @@ $(function selectPage() {
 				});
 
 				activePage = targetPage;
-				$(activePage).fadeOut(50, function () {
+				$(activePage).fadeOut(100, function () {
 					$(activePage).addClass("active");
-					$(activePage).fadeIn(50, function () {
+					$(activePage).fadeIn(100, function () {
 						isAnimating = false;
 					});
 				});
