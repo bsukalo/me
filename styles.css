@@ -6,7 +6,8 @@
 }
 
 img,
-.menu-item {
+.menu-item,
+.socials-container a {
 	-webkit-user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
