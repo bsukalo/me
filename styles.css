@@ -102,6 +102,10 @@ button:hover {
 	color: #ffffff;
 }
 
+.nav-menu-item.selected-item {
+	opacity: 100%;
+}
+
 .nav li {
 	margin-bottom: 20px;
 	padding-bottom: 12px;
@@ -213,7 +217,7 @@ button:hover {
 
 .open-sidebar {
 	position: absolute;
-	top: 15px;
+	top: 14px;
 	left: 20px;
 	z-index: 1;
 	transition: opacity 0.2s ease;
@@ -223,6 +227,24 @@ button:hover {
 	max-width: 40px;
 	height: auto;
 	min-height: 40px;
+}
+
+.nav-menu {
+	position: absolute;
+	display: flex;
+	top: 25px;
+	right: 30px;
+}
+
+.nav-menu li {
+	display: inline;
+}
+
+.nav-menu-item {
+	display: inline;
+	margin-left: 20px;
+	font-weight: 600;
+	opacity: 40%;
 }
 
 .page {
@@ -235,6 +257,10 @@ button:hover {
 	text-align: justify;
 	opacity: 0%;
 	z-index: -999;
+	-webkit-transform: scale(0.01);
+	-moz-transform: scale(0.01);
+	-ms-transform: scale(0.01);
+	transform: scale(0.01);
 }
 
 .home.page {
@@ -260,6 +286,10 @@ button:hover {
 .active {
 	opacity: 100%;
 	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
 }
 
 .stretchable {
