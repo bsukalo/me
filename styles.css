@@ -7,6 +7,7 @@
 
 img,
 .menu-item,
+.nav-menu-item,
 .socials-container a {
 	-webkit-user-drag: none;
 	user-select: none;
@@ -230,10 +231,11 @@ button:hover {
 }
 
 .nav-menu {
-	position: absolute;
+	position: relative;
 	display: flex;
+	width: 95%;
 	top: 25px;
-	right: 30px;
+	justify-content: right;
 }
 
 .nav-menu li {
@@ -306,5 +308,11 @@ button:hover {
 	}
 	.page {
 		left: 0px !important;
+	}
+	.open-sidebar {
+		z-index: -999;
+	}
+	.nav-menu {
+		justify-content: center;
 	}
 }
