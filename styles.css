@@ -233,7 +233,8 @@ button:hover {
 .nav-menu {
 	position: relative;
 	display: flex;
-	width: 95%;
+	width: 100%;
+	right: 30px;
 	top: 25px;
 	justify-content: right;
 }
@@ -314,5 +315,6 @@ button:hover {
 	}
 	.nav-menu {
 		justify-content: center;
+		right: 0;
 	}
 }
