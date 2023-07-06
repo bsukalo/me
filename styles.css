@@ -7,7 +7,8 @@
 
 img,
 .menu-item,
-.nav-menu-item,
+.navbar,
+.nav-menu,
 .socials-container a {
 	-webkit-user-drag: none;
 	user-select: none;
@@ -298,6 +299,30 @@ button:hover {
 .stretchable {
 	left: 0px;
 	transition: left 0.3s, opacity 0.3s;
+}
+
+.project-container {
+	position: relative;
+	border-left: 3px solid #f8b739;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	transition: margin-left 0.2s ease;
+}
+
+.project-container:hover {
+	margin-left: 10px;
+}
+
+.project-title {
+	font-weight: 600;
+	font-size: 24px;
+	margin-left: 15px;
+	margin-bottom: 5px;
+}
+
+.project-subtitle {
+	margin-left: 15px;
+	padding-bottom: 3px;
 }
 
 @media all and (max-width: 800px) {
