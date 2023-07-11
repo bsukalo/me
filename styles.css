@@ -262,6 +262,7 @@ button:hover {
 	text-align: justify;
 	opacity: 0%;
 	z-index: -999;
+	max-height: 100vh;
 	-webkit-transform: scale(0.01);
 	-moz-transform: scale(0.01);
 	-ms-transform: scale(0.01);
@@ -311,12 +312,17 @@ button:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-bottom: 30px;
 }
 
 .left-text {
 	text-align: left;
 	flex: 1;
+	margin-bottom: 25px;
+}
+
+.left-text li {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .right-text {
@@ -329,10 +335,9 @@ button:hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	padding: 0;
-	margin: 0;
 	max-width: 100%;
 	box-sizing: border-box;
+	margin-bottom: 42px;
 }
 
 .list-container {
@@ -355,7 +360,8 @@ button:hover {
 }
 
 .projects {
-	max-width: 70%;
+	max-width: 80%;
+	text-align: left;
 }
 
 .project-container {
