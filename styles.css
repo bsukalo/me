@@ -315,7 +315,8 @@ button:hover {
 
 .resume-wrapper {
 	max-width: 800px;
-	right: 0%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .resume-entry {
