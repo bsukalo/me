@@ -292,12 +292,6 @@ button:hover {
 	position: flex;
 }
 
-.logos-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
 .img-wrapper {
 	max-height: 60px;
 	width: 60px;
