@@ -30,6 +30,26 @@ function closeSidebar() {
 	});
 }
 
+function updateBodyHeight() {
+	const activePage = document.querySelector(".active");
+	if (activePage) {
+		const wrapper = activePage.querySelector('[class*="-wrapper"]');
+		if (wrapper) {
+			document.body.style.height = `${wrapper.offsetHeight + 320}px`;
+		}
+	}
+}
+
+updateBodyHeight();
+
+// Update on page change
+const observer = new MutationObserver(updateBodyHeight);
+observer.observe(document.body, {
+	subtree: true,
+	attributes: true,
+	attributeFilter: ["class"],
+});
+
 $(".open-sidebar").click(function () {
 	io ^= 1;
 	if (io) {
