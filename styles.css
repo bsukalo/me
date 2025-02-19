@@ -312,6 +312,12 @@ button:hover {
 	margin-right: auto;
 }
 
+.resume-wrapper h2 {
+	text-decoration: underline;
+	text-decoration-color: #f8b739;
+	text-underline-offset: 6px;
+}
+
 .resume-entry {
 	display: flex;
 	justify-content: space-between;
