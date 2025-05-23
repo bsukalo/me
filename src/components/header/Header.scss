@@ -35,7 +35,11 @@
 }
 
 .grey-color {
-	color: $subTitle;
+	color: $logoColor;
+}
+
+.grey-color-dark {
+	color: $logoColorDark;
 }
 
 .header li a {

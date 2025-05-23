@@ -3,9 +3,7 @@ import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
-import {
-	greeting,
-} from "../../portfolio";
+import { greeting } from "../../portfolio";
 
 function Header() {
 	const { isDark } = useContext(StyleContext);
@@ -14,9 +12,22 @@ function Header() {
 		<Headroom>
 			<header className={isDark ? "dark-menu header" : "header"}>
 				<a href="/" className="logo">
-					<span className="grey-color"> &lt;</span>
+					<span
+						className={
+							isDark ? "grey-color grey-color-dark" : "grey-color"
+						}
+					>
+						{" "}
+						&lt;
+					</span>
 					<span className="logo-name">{greeting.username}</span>
-					<span className="grey-color">/&gt;</span>
+					<span
+						className={
+							isDark ? "grey-color grey-color-dark" : "grey-color"
+						}
+					>
+						/&gt;
+					</span>
 				</a>
 				<input className="menu-btn" type="checkbox" id="menu-btn" />
 				<label

@@ -2,6 +2,10 @@
 Certain colors are used for different and multiply types of elements. 
 For greater control over colors visit each components .scss file. */
 
+// logo color
+$logoColor: #551a8b;
+$logoColorDark: #ffffff;
+
 // button colors
 $buttonColor: #55198b;
 $buttonHover: #8c43ce;
@@ -10,7 +14,7 @@ $topButtonHover: #000;
 // text colors light theme
 $titleColor: #000000;
 $textColor: #000000;
-$subTitle: #868e96;
+$subTitle: #000000;
 $cardSubtitle: #666666;
 $talkCardSubTitle: #7f8287;
 $blogCardTitleColor: #262626;

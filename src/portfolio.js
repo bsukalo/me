@@ -21,8 +21,10 @@ const greeting = {
 	username: "benjo",
 	title: "Hi, I'm Benjamin",
 	subTitle: emoji(
-		"I am a student currently pursuing a Bachelor's degree in Software Engineering 🚀 \n This site serves as both my personal resume, as well as my portfolio for showcasing the different projects I work on."
+		"I am a student currently pursuing a Bachelor's degree in Software Engineering 🚀"
 	),
+	subTitle2:
+		"This site serves as both my personal resume, as well as my portfolio for showcasing the different projects I work on",
 	resumeLink:
 		"https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
 	displayGreeting: true, // Set false to hide this section, defaults to true
