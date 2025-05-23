@@ -14,7 +14,9 @@ function Header() {
 				<a href="/" className="logo">
 					<span
 						className={
-							isDark ? "grey-color grey-color-dark" : "grey-color"
+							isDark
+								? "angle-bracket angle-bracket-dark"
+								: "angle-bracket"
 						}
 					>
 						{" "}
@@ -23,7 +25,9 @@ function Header() {
 					<span className="logo-name">{greeting.username}</span>
 					<span
 						className={
-							isDark ? "grey-color grey-color-dark" : "grey-color"
+							isDark
+								? "angle-bracket angle-bracket-dark"
+								: "angle-bracket"
 						}
 					>
 						/&gt;
