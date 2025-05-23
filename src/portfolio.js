@@ -25,8 +25,10 @@ const greeting = {
 	),
 	subTitle2:
 		"This site serves as both my personal resume, as well as my portfolio for showcasing the different projects I work on",
-	resumeLink:
-		"https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+	resumeLinkENG:
+		"https://drive.google.com/file/d/1siIRobHkLFAbEWors4JVg-YbJ36X4xgJ/view?usp=drive_link", // Set to empty to hide the button
+	resumeLinkBIH:
+		"https://drive.google.com/file/d/1T7DftRqvsabcmKTh2zwrCahPRE9qms6t/view?usp=drive_link",
 	displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
