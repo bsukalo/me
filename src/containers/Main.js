@@ -43,6 +43,7 @@ const Main = () => {
 						<div className="content">
 							<Header />
 							<Greeting />
+							<Skills />
 							<Footer />
 							<ScrollToTopButton />
 						</div>

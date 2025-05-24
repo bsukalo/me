@@ -38,16 +38,36 @@ const socialMediaLinks = {
 	linkedin: "https://www.linkedin.com/in/bsukalo/",
 	github: "https://github.com/bsukalo",
 	gmail: "bsukalo@outlook.com",
-	// To customize icons and social links, tweak src/components/SocialMedia
 	display: true, // Set true to display this section, defaults to false
 };
 
 // Skills Section
 
 const skillsSection = {
-	title: "",
+	title: "What I do",
 	subTitle: "",
-	skills: [],
+	skillsLeft: [
+		emoji("⚡ Create REST APIs to power web and mobile applications"),
+		emoji(
+			"⚡ Build responsive frontends using React for seamless user experiences"
+		),
+		emoji(
+			"⚡ Design and implement MongoDB schemas for efficient data storage"
+		),
+		emoji("⚡ Develop secure authentication systems with JWT and bcrypt"),
+	],
+	skillsRight: [
+		emoji("⚡ Manage backend logic and routing with Express.js"),
+		emoji(
+			"⚡ Integrate third-party APIs and services for extended functionality"
+		),
+		emoji(
+			"⚡ Deploy full-stack applications using services like Vercel and GitHub Pages"
+		),
+		emoji(
+			"⚡ Optimize performance and handle errors for scalable, robust systems"
+		),
+	],
 
 	/* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
