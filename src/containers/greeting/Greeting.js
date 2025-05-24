@@ -29,8 +29,8 @@ export default function Greeting() {
 							>
 								{" "}
 								{greeting.title}{" "}
-								<span className="wave-emoji">
-									{emoji("👋")}
+								<span className="rocket-emoji">
+									{emoji("🚀")}
 								</span>
 							</h1>
 							<p

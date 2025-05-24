@@ -19,9 +19,9 @@ const illustration = {
 
 const greeting = {
 	username: "benjo",
-	title: "Hi, I'm Benjamin",
+	title: "Turning ideas into code",
 	subTitle: emoji(
-		"I am a student currently pursuing a Bachelor's degree in Software Engineering 🚀"
+		"I'm Benjamin, a student currently pursuing a Bachelor's degree in Software Engineering"
 	),
 	subTitle2:
 		"This site serves as both my personal resume, as well as my portfolio for showcasing the different projects I work on",
