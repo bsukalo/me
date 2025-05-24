@@ -24,7 +24,6 @@
 	background-color: $lightBackground1;
 	max-width: 100%;
 	padding: 15px 0px;
-	margin: 0px 0px;
 }
 
 .header ul {
@@ -84,7 +83,6 @@
 
 .header .menu-icon {
 	cursor: pointer;
-	display: inline-block;
 	float: right;
 	padding: 28px 20px;
 	position: relative;
@@ -161,8 +159,17 @@
 	top: 0;
 }
 
+.headroom--unfixed .header {
+	padding: 10px 0%;
+}
+
 /* 48em = 768px */
 
+@media (max-width: 48em) {
+	.header {
+		padding: 10px 0px;
+	}
+}
 @media (min-width: 48em) {
 	.header li {
 		float: left;
@@ -171,6 +178,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding: 10px 5%;
 	}
 	.header .menu {
 		max-height: none;
