@@ -45,9 +45,10 @@ const socialMediaLinks = {
 
 const skillsSection = {
 	title: "What I do",
-	subTitle: "",
+	subTitle:
+		"I’m dedicated and creative with a strong work ethic and a commitment to excellence. Skilled in a range of technologies and services, I’m always eager to grow, learn, and take on new challenges.",
 	skillsLeft: [
-		emoji("⚡ Create REST APIs to power web and mobile applications"),
+		emoji("⚡ Create RESTful APIs to power web and mobile applications"),
 		emoji(
 			"⚡ Build responsive frontends using React for seamless user experiences"
 		),
