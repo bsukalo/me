@@ -73,10 +73,78 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
 	softwareSkills: [
-		// {
-		// 	skillName: "html-5",
-		// 	fontAwesomeClassname: "fab fa-html5",
-		// },
+		{
+			skillName: "html-5",
+			fontAwesomeClassname: "fab fa-html5",
+		},
+		{
+			skillName: "css3",
+			fontAwesomeClassname: "fab fa-css3",
+		},
+		{
+			skillName: "javascript",
+			fontAwesomeClassname: "fab fa-js",
+		},
+		{
+			skillName: "git",
+			fontAwesomeClassname: "fab fa-git",
+		},
+		{
+			skillName: "github",
+			fontAwesomeClassname: "fab fa-github",
+		},
+		{
+			skillName: "stack-overflow",
+			fontAwesomeClassname: "fab fa-stack-overflow",
+		},
+		{
+			skillName: "bootstrap",
+			fontAwesomeClassname: "fab fa-bootstrap",
+		},
+		{
+			skillName: "slack",
+			fontAwesomeClassname: "fab fa-slack",
+		},
+		{
+			skillName: "react",
+			fontAwesomeClassname: "fab fa-react",
+		},
+		{
+			skillName: "node",
+			fontAwesomeClassname: "fab fa-node",
+		},
+		{
+			skillName: "npm",
+			fontAwesomeClassname: "fab fa-npm",
+		},
+		{
+			skillName: "figma",
+			fontAwesomeClassname: "fab fa-figma",
+		},
+		{
+			skillName: "python",
+			fontAwesomeClassname: "fab fa-python",
+		},
+		{
+			skillName: "microsoft",
+			fontAwesomeClassname: "fab fa-microsoft",
+		},
+		{
+			skillName: "wordpress",
+			fontAwesomeClassname: "fab fa-wordpress",
+		},
+		{
+			skillName: "bitbucket",
+			fontAwesomeClassname: "fab fa-bitbucket",
+		},
+		{
+			skillName: "apple",
+			fontAwesomeClassname: "fab fa-apple",
+		},
+		{
+			skillName: "linux",
+			fontAwesomeClassname: "fab fa-linux",
+		},
 	],
 	display: true, // Set false to hide this section, defaults to true
 };

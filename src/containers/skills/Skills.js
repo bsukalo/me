@@ -29,7 +29,7 @@ export default function Skills() {
 				>
 					{skillsSection.subTitle}
 				</p>
-				<SoftwareSkill />
+
 				<Reveal left duration={1400}>
 					<div className="skills-main-div">
 						<div>
@@ -65,6 +65,9 @@ export default function Skills() {
 							})}
 						</div>
 					</div>
+				</Reveal>
+				<Reveal right duration={1400}>
+					<SoftwareSkill />
 				</Reveal>
 			</div>
 		</div>
