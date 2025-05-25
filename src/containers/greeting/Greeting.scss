@@ -4,7 +4,6 @@
 	width: 100%;
 	padding: 20px 10px;
 	margin: 0px 0px;
-	margin-top: 4rem;
 }
 .greet-main {
 	width: 100%;
@@ -60,8 +59,9 @@
 }
 
 .greeting-image-div > img {
-	max-width: 100%;
+	max-width: 600px;
 	height: auto;
+	float: right;
 }
 
 .rocket-emoji {
@@ -91,7 +91,7 @@
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1302px) {
 	.greeting-image-div {
 		display: none;
 	}
