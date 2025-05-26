@@ -1,90 +1,125 @@
 @import "../../_globalColor";
 
 .card-image {
-  max-width: 100%;
-  height: auto;
-  width: 250px;
+	max-width: 100%;
+	height: auto;
+	width: 250px;
 }
+
 .card-title {
-  color: $titleColor;
-  font-size: 22px;
-  line-height: 24px;
-  font-weight: 700;
-  margin: 15px 0 0 0;
+	color: $titleColor;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(201px, 1fr));
+	gap: 1rem;
+	line-height: 19px;
+	font-weight: 700;
+	margin: 15px 0 0 0;
 }
+
 .card-subtitle {
-  color: $cardSubtitle;
-  font-size: 17px;
-  line-height: 1.5rem;
-}
-.project-card {
-  display: flex;
-  flex-direction: column;
-  background-color: $lightBackground2;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid $lightBorder1;
-  justify-content: center;
-}
-.project-card-light {
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.project-card-dark {
-  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.25s ease;
-}
-
-.project-detail {
-  text-align: center;
-}
-.project-card-light:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
-}
-.project-card-dark:hover {
-  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
-}
-.project-image {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	color: $cardSubtitle;
+	font-size: 14px;
+	line-height: 22px;
 }
 
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(201px, 1fr));
+	gap: 1rem;
+	justify-content: start;
+}
+
+.project-card {
+	display: flex;
+	flex-direction: column;
+	background-color: $lightBackground2;
+	padding: 1.5rem;
+	border-radius: 10px;
+	border: 1px solid $lightBorder1;
+	justify-content: space-between;
+	max-width: 400px; //277px
+}
+.project-card-light {
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.project-card-dark {
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.25s ease;
+}
+
+.project-detail {
+	text-align: left;
+}
+
+.project-card-light:hover {
+	box-shadow: $lightBoxShadowDark 0px 5px 15px -5px;
+}
+
+.project-card-dark:hover {
+	box-shadow: 0px 5px 15px -5px $darkBoxShadow;
+}
+
+.project-image {
+	position: relative;
+	height: 250px;
+	overflow: hidden;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.stack-icons {
+	font-size: 1.2rem;
+	padding-left: 0;
+	text-align: left;
+	justify-content: start;
+}
+
+.stack-icon-inline {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.stack-icon-inline > i {
+	color: $subTitle;
+}
+
+.stack-icon-inline > i:hover {
+	color: $skillsColor;
+}
+.stack-icon-inline > p {
+	color: $subTitle;
+	font-size: 10px;
+}
+.stack-icon-inline > i:hover ~ p {
+	color: $skillsColor;
 }
 
 .project-card-footer span.project-tag {
-  background: $buttonColor;
-  color: $lightBackground3;
-  vertical-align: middle;
-  align-items: center;
-  border-radius: 4px;
-  display: inline-flex;
-  font-size: 0.75rem;
-  height: 2em;
-  justify-content: center;
-  white-space: nowrap;
-  line-height: 1.5;
-  margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.75em;
-  cursor: pointer;
-  transition: 0.2s ease-in;
+	background: $buttonColor;
+	color: $lightBackground3;
+	vertical-align: middle;
+	align-items: center;
+	border-radius: 4px;
+	display: inline-flex;
+	font-size: 0.75rem;
+	height: 2em;
+	justify-content: center;
+	white-space: nowrap;
+	line-height: 1.5;
+	margin: 0 0.5rem 0.5rem 0;
+	padding: 0 0.75em;
+	cursor: pointer;
+	transition: 0.2s ease-in;
 }
 
 @media (max-width: 768px) {
-  .project-subtitle {
-    font-size: 16px;
-    text-align: center;
-  }
+	.project-subtitle {
+		font-size: 16px;
+		text-align: center;
+	}
 }

@@ -244,31 +244,73 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-	title: "Big Projects",
-	subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+	title: "My Projects",
+	subtitle: "",
 	projects: [
 		{
-			image: require("./assets/images/saayaHealthLogo.webp"),
-			projectName: "Saayahealth",
-			projectDesc:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			stack: [
+				{ fontAwesomeClassname: "fab fa-html5" },
+				{ fontAwesomeClassname: "fab fa-css3" },
+				{ fontAwesomeClassname: "fab fa-js" },
+				{ fontAwesomeClassname: "fab fa-react" },
+			],
+			projectName: "me",
+			projectDesc: "The web app you are currently viewing!",
 			footerLink: [
 				{
-					name: "Visit Website",
-					url: "http://saayahealth.com/",
+					name: "Learn more > >",
+					url: "https://github.com/bsukalo/me",
 				},
-				//  you can add extra buttons here.
 			],
 		},
 		{
-			image: require("./assets/images/nextuLogo.webp"),
-			projectName: "Nextu",
+			stack: [
+				{ fontAwesomeClassname: "fab fa-html5" },
+				{ fontAwesomeClassname: "fab fa-css3" },
+				{ fontAwesomeClassname: "fab fa-bootstrap" },
+				{ fontAwesomeClassname: "fab fa-js" },
+				{ fontAwesomeClassname: "fab fa-react" },
+				{ fontAwesomeClassname: "fab fa-node" },
+			],
+			projectName: "gamefinder",
 			projectDesc:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+				"A web app for exploring video games by genre and platform",
 			footerLink: [
 				{
-					name: "Visit Website",
-					url: "http://nextu.se/",
+					name: "Learn more > >",
+					url: "https://github.com/bsukalo/gamefinder",
+				},
+			],
+		},
+		{
+			stack: [
+				{ fontAwesomeClassname: "fab fa-html5" },
+				{ fontAwesomeClassname: "fab fa-css3" },
+				{ fontAwesomeClassname: "fab fa-react" },
+				{ fontAwesomeClassname: "fab fa-node" },
+			],
+			projectName: "medic_web",
+			projectDesc:
+				"The frontend part of a project that uses a REST API to manage a database of users",
+			footerLink: [
+				{
+					name: "Learn more > >",
+					url: "https://github.com/bsukalo/medic_web",
+				},
+			],
+		},
+		{
+			stack: [
+				{ fontAwesomeClassname: "fab fa-js" },
+				{ fontAwesomeClassname: "fab fa-node" },
+			],
+			projectName: "medic_api",
+			projectDesc:
+				"The backend part of a project that uses a REST API to manage a database of users",
+			footerLink: [
+				{
+					name: "Learn more > >",
+					url: "https://github.com/bsukalo/medic_api",
 				},
 			],
 		},

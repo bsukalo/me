@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
+import StartupProjects from "./StartupProjects/StartupProject.js";
 import Footer from "../components/footer/Footer";
 import ScrollToTopButton from "./topbutton/Top";
 import Profile from "./profile/Profile";
@@ -44,6 +45,7 @@ const Main = () => {
 							<Header />
 							<Greeting />
 							<Skills />
+							<StartupProjects />
 							<Footer />
 							<ScrollToTopButton />
 						</div>
