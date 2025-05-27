@@ -1,5 +1,11 @@
 @import "../_globalColor";
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: $lightBackground1;
 }
@@ -11,7 +17,6 @@ body {
 }
 
 .content {
-	padding: 0% 10%;
 	min-height: 100vh;
 }
 

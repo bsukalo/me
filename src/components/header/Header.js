@@ -55,6 +55,11 @@ function Header() {
 							<a href="#skills">What I do</a>
 						</li>
 					)}
+					{viewSkills && (
+						<li>
+							<a href="#projects">Projects</a>
+						</li>
+					)}
 
 					<li>
 						{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
