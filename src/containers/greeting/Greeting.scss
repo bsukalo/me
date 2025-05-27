@@ -34,7 +34,12 @@
 
 .button-greeting-div {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0px 0px 100px;
+}
+
+.button-greeting-div > a {
+	padding-bottom: 10px;
 }
 
 .download-link-button {
