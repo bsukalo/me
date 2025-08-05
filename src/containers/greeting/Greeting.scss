@@ -15,8 +15,13 @@
 	display: flex;
 }
 
+.title {
+	color: $subText !important;
+}
+
 .subTitle {
 	color: $subText !important;
+	font-size: 14px !important;
 }
 
 .greeting-main {
