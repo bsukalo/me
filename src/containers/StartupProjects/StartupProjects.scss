@@ -52,7 +52,16 @@
 }
 
 .project-detail {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 	text-align: left;
+	justify-content: space-between;
+}
+
+.project-button {
+	display: block;
+	align-items: left;
 }
 
 .project-card-light:hover {
