@@ -9,7 +9,6 @@
 /coverage
 /build
 
-
 # misc
 .DS_Store
 .env
@@ -27,3 +26,4 @@ public/profile.json
 public/blogs.json
 node_modules
 node_modules/.cache/.eslintcache
+deploy.sh
