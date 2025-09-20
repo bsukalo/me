@@ -160,6 +160,7 @@ const educationInfo = {
 			logo: require("./assets/images/iusLogo.png"),
 			subHeader: "Bachelor of Software Engineering",
 			duration: "September 2022 - Present",
+			descBullets: ["Free & open-source software advocate"],
 		},
 		{
 			schoolName: "Druga gimnazija Sarajevo",
