@@ -12,7 +12,7 @@ function Header() {
 	return (
 		<Headroom>
 			<header className={isDark ? "dark-menu header" : "header"}>
-				<a href="/" className="logo">
+				<a href="https://bsukalo.github.io/me/" className="logo">
 					<span
 						className={
 							isDark
