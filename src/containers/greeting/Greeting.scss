@@ -65,7 +65,8 @@
 }
 
 .greeting-text-p2 {
-	font-size: 14px;
+	font-size: 14px !important;
+	line-height: 0px;
 }
 
 .greeting-image-div > img {
@@ -130,7 +131,7 @@
 		line-height: 28px !important;
 	}
 	.greeting-text-p2 {
-		font-size: 12px;
+		font-size: 12px !important;
 	}
 }
 
